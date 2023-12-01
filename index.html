@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cat move</title>
+  </head>
+  <body>
+    <img
+      id="face"
+      src="https://www.dcnewsnow.com/wp-content/uploads/sites/14/2022/07/Cat.jpg?w=2560&h=1440&crop=1"
+      alt=""
+    />
+    <div id="message"></div>
+
+    <script>
+      let face = document.getElementById("face");
+      let onMouseMove = function () {
+        document.getElementById("message").textContent += "Moove ";
+      };
+
+      face.addEventListener("mousemove", onMouseMove);
+    </script>
+  </body>
+</html>
